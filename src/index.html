@@ -1,26 +1,205 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>X clone mock</title>
+    <title>Home / X</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png" />
   </head>
   <body>
-    <div id="app">
-      <main>
-        <!-- 左 -->
-        <section class="left">left</section>
-        <!-- 中央 -->
-        <div class="center">
-          <!-- プロフィール -->
-          <section class="profile">profile</section>
-          <!-- タブ -->
-          <section class="tabs">profile</section>
+    <!-- nav bar starts -->
+    <nav>
+      <div class="nav_logo-wrapper">
+        <b>X</b>
+      </div>
+
+      <div class="Menu_options active">
+        <span class="material-icons">home</span>
+        <h2>ホーム</h2>
+      </div>
+
+      <div class="Menu_options">
+        <span class="material-icons">tag</span>
+        <h2>検索</h2>
+      </div>
+
+      <div class="Menu_options">
+        <span class="material-icons">notifications</span>
+        <h2>通知</h2>
+      </div>
+
+      <div class="Menu_options">
+        <span class="material-icons">email</span>
+        <h2>メッセージ</h2>
+      </div>
+
+      <div class="Menu_options">
+        <span class="material-icons">bookmark</span>
+        <h2>ブックマーク</h2>
+      </div>
+
+      <div class="Menu_options">
+        <span class="material-icons">person</span>
+        <h2>プロフィール</h2>
+      </div>
+
+      <div class="Menu_options">
+        <span class="material-icons">more_horiz</span>
+        <h2>もっと見る</h2>
+      </div>
+
+      <button class="post_btn">ポスト</button>
+    </nav>
+    <!-- nav bar end -->
+
+    <!-- main section start -->
+    <main>
+      <div class="header">
+        <h2>Home</h2>
+      </div>
+
+      <div class="post_box">
+        <form>
+          <div class="post_box-input">
+            <img src="images/profile.jpg" alt="profile" />
+            <input type="text" placeholder="いまどうしてる？" />
+            <button class="">ポスト</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="post">
+        <div class="post_profile-image">
+          <img src="images/profile.jpg" alt="profile" />
         </div>
-        <!-- 右 -->
-        <section class="right¥">right</section>
-      </main>
-    </div>
+
+        <div class="post_body">
+          <div class="post_header">
+            <div class="post_header-text">
+              <h3>
+                Java
+                <span class="header-icon-section">
+                  <span class="material-icons post_badge">verified</span>@java
+                </span>
+              </h3>
+            </div>
+
+            <div class="post_header-discription">
+              <p>Java 18 is now available! #Java18 #JDK18 #openjdk</p>
+              <br />
+              <p>
+                Download now: https://social.ora.cl/6012KoqQ0 <br />
+                Release notes: https://social.ora.cl/6013KoqQF <br />
+                API Javadoc: https://social.ora.cl/6015KoqQN <br />
+                Features: https://social.ora.cl/6016KoqQ4 <br />
+              </p>
+            </div>
+          </div>
+          <img src="images/profile.jpg" alt="profile" />
+
+          <div class="post_footer">
+            <span class="material-icons">chat</span>
+            <span class="material-icons">repeat</span>
+            <span class="material-icons">favorite_border</span>
+            <span class="material-icons">file_upload</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post_profile-image">
+          <img src="images/profile.jpg" alt="profile" />
+        </div>
+
+        <div class="post_body">
+          <div class="post_header">
+            <div class="post_header-text">
+              <h3>
+                Java
+                <span class="header-icon-section">
+                  <span class="material-icons post_badge">verified</span>@java
+                </span>
+              </h3>
+            </div>
+
+            <div class="post_header-discription">
+              <p>Java 18 is now available! #Java18 #JDK18 #openjdk</p>
+              <br />
+              <p>
+                Download now: https://social.ora.cl/6012KoqQ0 <br />
+                Release notes: https://social.ora.cl/6013KoqQF <br />
+                API Javadoc: https://social.ora.cl/6015KoqQN <br />
+                Features: https://social.ora.cl/6016KoqQ4 <br />
+              </p>
+            </div>
+          </div>
+          <img src="images/profile.jpg" alt="profile" />
+
+          <div class="post_footer">
+            <span class="material-icons">chat</span>
+            <span class="material-icons">repeat</span>
+            <span class="material-icons">favorite_border</span>
+            <span class="material-icons">file_upload</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post_profile-image">
+          <img src="images/profile.jpg" alt="profile" />
+        </div>
+
+        <div class="post_body">
+          <div class="post_header">
+            <div class="post_header-text">
+              <h3>
+                Java
+                <span class="header-icon-section">
+                  <span class="material-icons post_badge">verified</span>@java
+                </span>
+              </h3>
+            </div>
+
+            <div class="post_header-discription">
+              <p>Java 18 is now available! #Java18 #JDK18 #openjdk</p>
+              <br />
+              <p>
+                Download now: https://social.ora.cl/6012KoqQ0 <br />
+                Release notes: https://social.ora.cl/6013KoqQF <br />
+                API Javadoc: https://social.ora.cl/6015KoqQN <br />
+                Features: https://social.ora.cl/6016KoqQ4 <br />
+              </p>
+            </div>
+          </div>
+          <img src="images/profile.jpg" alt="profile" />
+
+          <div class="post_footer">
+            <span class="material-icons">chat</span>
+            <span class="material-icons">repeat</span>
+            <span class="material-icons">favorite_border</span>
+            <span class="material-icons">file_upload</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main section end -->
+
+    <!-- aside element start -->
+    <aside>
+      <div class="aside_input">
+        <span class="material-icons aside_search-icon">search</span>
+        <input type="text" placeholder="Search Post" />
+      </div>
+
+      <div class="aside_container">トレンド</div>
+    </aside>
+    <!-- aside element ends -->
   </body>
 </html>
