@@ -1,0 +1,19 @@
+{
+  "name": "unknown",
+  "version": "1.0.0",
+  "description": "unknown",
+  "scripts": {
+    "dev": "yarn reload -b -d src"
+  },
+  "author": "rc-code-jp",
+  "license": "UNLICENSED",
+  "private": true,
+  "volta": {
+    "node": "20.9.0",
+    "yarn": "4.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3",
+    "reload": "^3.2.1"
+  }
+}
