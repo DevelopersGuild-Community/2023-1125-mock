@@ -171,6 +171,7 @@ main::-webkit-scrollbar {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+  width: 50%;
 }
 
 .post_badge {
@@ -236,4 +237,8 @@ aside {
   padding: 20px;
   background-color: #f5f8fa;
   border-radius: 20px;
+}
+
+.material-icons {
+  cursor: pointer;
 }
