@@ -88,13 +88,7 @@
         <div class="post_body">
           <div class="post_header">
             <div class="post_header-text">
-              <h3>
-                RyoCa
-                <span class="header-icon-section">
-                  <span class="material-icons post_badge">verified</span
-                  >@ryocacode
-                </span>
-              </h3>
+              <h3>RyoCa</h3>
             </div>
 
             <div class="post_header-discription">
@@ -105,7 +99,7 @@
               </p>
             </div>
           </div>
-          <img src="images/post.png" alt="post-image" />
+          <img src="images/post.png" class="post_image" />
 
           <div class="post_footer">
             <span class="material-icons">chat</span>
@@ -123,13 +117,7 @@
         <div class="post_body">
           <div class="post_header">
             <div class="post_header-text">
-              <h3>
-                RyoCa
-                <span class="header-icon-section">
-                  <span class="material-icons post_badge">verified</span
-                  >@ryocacode
-                </span>
-              </h3>
+              <h3>RyoCa</h3>
             </div>
 
             <div class="post_header-discription">
@@ -140,7 +128,7 @@
               </p>
             </div>
           </div>
-          <img src="images/post.png" alt="post-image" />
+          <img src="images/post.png" class="post_image" />
 
           <div class="post_footer">
             <span class="material-icons">chat</span>
@@ -158,13 +146,7 @@
         <div class="post_body">
           <div class="post_header">
             <div class="post_header-text">
-              <h3>
-                RyoCa
-                <span class="header-icon-section">
-                  <span class="material-icons post_badge">verified</span
-                  >@ryocacode
-                </span>
-              </h3>
+              <h3>RyoCa</h3>
             </div>
 
             <div class="post_header-discription">
@@ -175,7 +157,7 @@
               </p>
             </div>
           </div>
-          <img src="images/post.png" alt="post-image" />
+          <img src="images/post.png" class="post_image" />
 
           <div class="post_footer">
             <span class="material-icons">chat</span>
@@ -196,6 +178,37 @@
 
       <div class="aside_container">トレンド</div>
     </aside>
-    <!-- aside element ends -->
+    <!-- aside element end -->
+
+    <!-- image modal start -->
+    <div id="imageModal" class="image_modal" role="modal">
+      <a href="" class="image_modal-close">
+        <span class="material-icons">close</span>
+      </a>
+      <img src="images/post.png" class="image_modal-content" />
+    </div>
+    <!-- image modal end -->
+
+    <script>
+      window.onload = () => {
+        const $postImages = document.querySelectorAll('.post_image')
+        const $imageModal = document.querySelector('#imageModal')
+        const $imageModalClose = document.querySelector('.image_modal-close')
+
+        console.dir($postImages)
+
+        // open image modal
+        $postImages.forEach(($el) => {
+          $el.addEventListener('click', () => {
+            $imageModal.classList.add('active')
+          })
+        })
+
+        // close image modal
+        $imageModalClose.addEventListener('click', () => {
+          $imageModal.classList.remove('active')
+        })
+      }
+    </script>
   </body>
 </html>
