@@ -150,6 +150,8 @@ main::-webkit-scrollbar {
 
 .post_box-input {
   display: flex;
+  align-items: center;
+  gap: 10px;
   padding: 20px;
 }
 
@@ -169,8 +171,6 @@ main::-webkit-scrollbar {
   border: none;
   width: 80px;
   height: 40px;
-  margin-top: 20px;
-  margin-left: auto;
 }
 
 .post_profile-image img {
