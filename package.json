@@ -3,17 +3,21 @@
   "version": "1.0.0",
   "description": "unknown",
   "scripts": {
-    "dev": "yarn reload -b -d src"
+    "dev": "reload -b -d src",
+    "api": "node api/index.js"
   },
   "author": "rc-code-jp",
   "license": "UNLICENSED",
   "private": true,
   "volta": {
     "node": "20.9.0",
-    "yarn": "4.0.1"
+    "npm": "10.2.4"
   },
   "devDependencies": {
     "prettier": "^3.0.3",
     "reload": "^3.2.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
