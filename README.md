@@ -16,7 +16,14 @@ npm run api
 
 post: 3080
 
+プロフィール
+
+```
+GET: /profile
+```
+
 タイムライン/フォロー
+
 ```
 # 一回あたり5件を返す
 # lastIdが5のとき4件を返す
@@ -25,16 +32,19 @@ GET: /posts/follows?lastId={number}
 ```
 
 タイムライン/おすすめ
+
 ```
 GET: /posts/recommendations?lastId={number}
 ```
 
 タイムライン/検索
+
 ```
 GET: /posts/search?q={string}
 ```
 
 ポスト
+
 ```
 POST: /posts
 bodyParams

@@ -89,6 +89,20 @@ nav {
   padding-right: 20px;
 }
 
+.side_profile {
+  margin-top: 40px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.side_profile-image {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 60px;
+}
+
 /* == menu section */
 
 main {

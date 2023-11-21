@@ -55,6 +55,8 @@ const createPostItem = (id, text = null) => {
   return {
     id: id,
     userName: 'ユーザー' + id,
+    userImageUrl: 'https://placehold.jp/150x150.png',
     text: text ?? 'ダミーデータなう',
+    imageUrl: 'https://placehold.jp/600x600.png',
   }
 }
