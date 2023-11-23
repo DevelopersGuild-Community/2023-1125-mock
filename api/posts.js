@@ -11,7 +11,7 @@ router.get('/recommendations', (req, res) => {
 
   for (let i = lastId; i > 0; i--) {
     if (data.length >= PER_PAGE) break
-    data.push(createPostItem(i))
+    data.push(createPostItem(i, 'おすすめポスト'))
   }
 
   res.json(data)
@@ -56,7 +56,7 @@ const createPostItem = (id, text = null) => {
     id: id,
     userName: 'ユーザー' + id,
     userImageUrl: 'https://placehold.jp/150x150.png',
-    text: text ?? 'ダミーデータなう',
-    imageUrl: 'https://placehold.jp/600x600.png',
+    postText: text ?? 'ダミーデータなう',
+    postImageUrl: 'https://placehold.jp/600x600.png',
   }
 }

@@ -13,6 +13,6 @@ const createProfile = () => {
   return {
     id: 999,
     userName: 'ダミーユーザー',
-    imageUrl: 'https://placehold.jp/150x150.png',
+    userImageUrl: 'https://placehold.jp/150x150.png',
   }
 }
