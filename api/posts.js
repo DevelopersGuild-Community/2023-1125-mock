@@ -14,7 +14,10 @@ router.get('/recommendations', (req, res) => {
     data.push(createPostItem(i, 'おすすめポスト'))
   }
 
-  res.json(data)
+  // 1秒sleep
+  setTimeout(() => {
+    res.json(data)
+  }, 1000)
 })
 
 // タイムライン/フォロー
@@ -28,7 +31,10 @@ router.get('/follows', (req, res) => {
     data.push(createPostItem(i))
   }
 
-  res.json(data)
+  // 1秒sleep
+  setTimeout(() => {
+    res.json(data)
+  }, 1000)
 })
 
 // 検索
@@ -40,12 +46,21 @@ router.get('/search', (req, res) => {
   data.push(createPostItem(3, q))
   data.push(createPostItem(4, q))
   data.push(createPostItem(5, q))
-  res.json(data)
+
+  // 1秒sleep
+  setTimeout(() => {
+    res.json(data)
+  }, 1000)
 })
 
 // 作成
 router.post('/', (req, res) => {
-  res.send('posts api')
+  // 1秒sleep
+  setTimeout(() => {
+    res.json({
+      id: '999',
+    })
+  }, 1000)
 })
 
 module.exports = router
