@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const postRouter = require('./posts')
+const profileRouter = require('./profile')
 
 const app = express()
 
@@ -11,6 +12,7 @@ app.use(express.urlencoded({ extended: false }))
 
 // routes
 app.use('/posts', postRouter)
+app.use('/profile', profileRouter)
 
 // run
 app.listen(3080)

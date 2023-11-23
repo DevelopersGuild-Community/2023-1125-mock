@@ -11,7 +11,7 @@ module.exports = router
 // ダミーデータ生成
 const createProfile = () => {
   return {
-    id: id,
+    id: 999,
     userName: 'ダミーユーザー',
     imageUrl: 'https://placehold.jp/150x150.png',
   }

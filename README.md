@@ -1,9 +1,13 @@
 ## 起動
 
+```
+npm run dev
+```
+
 ### HTML
 
 ```
-npm run dev
+npm run html
 ```
 
 ### API
