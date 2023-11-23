@@ -187,6 +187,14 @@ main::-webkit-scrollbar {
   height: 40px;
 }
 
+.post_box-input .material-icons {
+  font-weight: bold;
+  margin-top: 0.1em;
+  background-color: var(--theme-color);
+  border-radius: 50%;
+  color: white;
+}
+
 .post_profile-image img {
   border-radius: 50%;
   height: 40px;
