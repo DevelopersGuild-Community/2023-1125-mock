@@ -5,11 +5,11 @@ const PER_PAGE = 5
 
 // タイムライン/おすすめ
 router.get('/recommendations', (req, res) => {
-  const lastId = Number(req.query.lastId ?? 0)
+  const lastId = Number(req.query.lastId ?? 100)
 
   const data = []
 
-  for (let i = lastId; i > 0; i--) {
+  for (let i = lastId - 1; i > 0; i--) {
     if (data.length >= PER_PAGE) break
     data.push(createPostItem(i, 'おすすめポスト'))
   }
@@ -22,11 +22,11 @@ router.get('/recommendations', (req, res) => {
 
 // タイムライン/フォロー
 router.get('/follows', (req, res) => {
-  const lastId = Number(req.query.lastId ?? 0)
+  const lastId = Number(req.query.lastId ?? 100)
 
   const data = []
 
-  for (let i = lastId; i > 0; i--) {
+  for (let i = lastId - 1; i > 0; i--) {
     if (data.length >= PER_PAGE) break
     data.push(createPostItem(i))
   }
@@ -68,7 +68,7 @@ module.exports = router
 // ダミーデータ生成
 const createPostItem = (id, text = null) => {
   return {
-    id: id,
+    id: String(id),
     userName: 'ユーザー' + id,
     userImageUrl: 'https://placehold.jp/150x150.png',
     postText: text ?? 'ダミーデータなう',
