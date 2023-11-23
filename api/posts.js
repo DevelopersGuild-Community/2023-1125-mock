@@ -53,6 +53,20 @@ router.get('/search', (req, res) => {
   }, 1000)
 })
 
+// 詳細
+router.get('/:postId', (req, res) => {
+  // 1秒sleep
+  setTimeout(() => {
+    res.json({
+      id: String('1'),
+      userName: 'ユーザー' + '1',
+      userImageUrl: 'https://placehold.jp/150x150.png',
+      postText: '詳細データなう',
+      postImageUrl: 'https://placehold.jp/600x600.png',
+    })
+  }, 1000)
+})
+
 // 作成
 router.post('/', (req, res) => {
   // 1秒sleep

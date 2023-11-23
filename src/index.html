@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="globals.css" />
     <link rel="icon" href="favicon.png" />
   </head>
   <body>
@@ -185,14 +185,13 @@
 
         <div class="aside_container">トレンド</div>
       </aside>
+    </div>
 
-      <div id="imageModal" class="image_modal" role="modal">
-        <a href="" class="image_modal-close">
-          <span class="material-icons">close</span>
-        </a>
+    <dialog id="imageModal">
+      <div class="image_modal">
         <img src="images/post.png" class="image_modal-content" />
       </div>
-    </div>
+    </dialog>
 
     <script>
       window.onload = () => {
@@ -200,18 +199,23 @@
         const $imageModal = document.querySelector('#imageModal')
         const $imageModalClose = document.querySelector('.image_modal-close')
 
-        console.dir($postImages)
-
         // open image modal
         $postImages.forEach(($el) => {
           $el.addEventListener('click', () => {
-            $imageModal.classList.add('active')
+            $imageModal.showModal()
           })
+        })
+
+        // backdrop click
+        $imageModal.addEventListener('click', (e) => {
+          if (e.target === $imageModal) {
+            $imageModal.close()
+          }
         })
 
         // close image modal
         $imageModalClose.addEventListener('click', () => {
-          $imageModal.classList.remove('active')
+          $imageModal.close()
         })
       }
     </script>

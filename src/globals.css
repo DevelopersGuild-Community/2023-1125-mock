@@ -289,30 +289,22 @@ aside {
   border-radius: 20px;
 }
 
-.image_modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+dialog {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  z-index: 100;
+}
+
+dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  display: none;
+}
+
+.image_modal {
+  display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-}
-
-.image_modal.active {
-  display: flex;
-}
-
-.image_modal-close {
-  display: block;
-  color: var(--theme-color);
-  font-size: 40px;
-  margin-left: auto;
-  margin-right: 2vw;
 }
 
 .image_modal-content {

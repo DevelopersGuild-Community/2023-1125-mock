@@ -26,6 +26,12 @@ post: 3080
 GET: /profile
 ```
 
+ポスト詳細
+
+```
+GET: /posts/{postId}
+```
+
 タイムライン/フォロー
 
 ```
