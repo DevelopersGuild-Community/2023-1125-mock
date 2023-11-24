@@ -123,7 +123,7 @@ main::-webkit-scrollbar {
   display: none;
 }
 
-.header {
+.tabs {
   position: sticky;
   top: 0;
   background-color: white;
@@ -136,17 +136,17 @@ main::-webkit-scrollbar {
   justify-content: space-around;
 }
 
-.header h2 {
+.tabs h2 {
   font-weight: bold;
   font-size: 20px;
 }
 
-.header a {
+.tabs a {
   text-decoration: none;
   opacity: 0.5;
 }
 
-.header a.active {
+.tabs a.active {
   opacity: 1;
   color: var(--theme-color);
 }
@@ -230,7 +230,7 @@ main::-webkit-scrollbar {
   font-size: 20px;
 }
 
-.header-icon-section {
+.tabs-icon-section {
   font-weight: 600;
   font-size: 12px;
   color: grey;
