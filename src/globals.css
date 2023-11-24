@@ -144,6 +144,7 @@ main::-webkit-scrollbar {
 .tabs a {
   text-decoration: none;
   opacity: 0.5;
+  color: black;
 }
 
 .tabs a.active {
