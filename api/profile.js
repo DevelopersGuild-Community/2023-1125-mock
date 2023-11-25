@@ -1,7 +1,8 @@
 const router = require('express').Router()
 
-// タイムライン/おすすめ
+// プロフィール
 router.get('/', (req, res) => {
+  console.log('プロフィール')
   const data = createProfile()
   res.json(data)
 })

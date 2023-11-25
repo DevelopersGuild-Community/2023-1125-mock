@@ -5,6 +5,7 @@ const PER_PAGE = 5
 
 // タイムライン/おすすめ
 router.get('/recommendations', (req, res) => {
+  console.log('タイムライン/おすすめ')
   const lastId = Number(req.query.lastId ?? 100)
 
   const data = []
@@ -22,6 +23,7 @@ router.get('/recommendations', (req, res) => {
 
 // タイムライン/フォロー
 router.get('/follows', (req, res) => {
+  console.log('タイムライン/フォロー')
   const lastId = Number(req.query.lastId ?? 100)
 
   const data = []
@@ -39,6 +41,7 @@ router.get('/follows', (req, res) => {
 
 // 検索
 router.get('/search', (req, res) => {
+  console.log('検索')
   const q = String(req.query.q ?? '')
   const data = []
   data.push(createPostItem(1, q))
@@ -55,20 +58,17 @@ router.get('/search', (req, res) => {
 
 // 詳細
 router.get('/:postId', (req, res) => {
+  console.dir('詳細')
+  const data = createPostItem('99', '詳細ポスト')
   // 1秒sleep
   setTimeout(() => {
-    res.json({
-      id: String('1'),
-      userName: 'ユーザー' + '1',
-      userImageUrl: 'https://placehold.jp/150x150.png',
-      postText: '詳細データなう',
-      postImageUrl: 'https://placehold.jp/600x600.png',
-    })
+    res.json(data)
   }, 1000)
 })
 
 // 作成
 router.post('/', (req, res) => {
+  console.dir('作成')
   // 1秒sleep
   setTimeout(() => {
     res.json({
